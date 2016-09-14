@@ -18,4 +18,6 @@ COPY . /quickstart
 RUN chown -R nodejs:nodejs /quickstart
 USER nodejs
 
+RUN lessc styles.less styles.css
+
 CMD npm start
