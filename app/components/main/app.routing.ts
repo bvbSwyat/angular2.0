@@ -1,36 +1,18 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": [
-    ""
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 2",
-   "language": "python",
-   "name": "python2"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 2.0
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython2",
-   "version": "2.7.6"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 0
-}
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { StartComponent }  from '../content/start.component';
+import { SenderComponent }  from '../content/sender.component';
+import { DriverComponent }  from '../content/driver.component';
+import { NotFoundComponent }  from '../content/notFound.component';
+
+const appRoutes : Routes = [
+  {path: 'sender', component: SenderComponent},
+  {path: 'driver', component: DriverComponent},
+  {path: '', component: StartComponent},
+  {path: '**', component: NotFoundComponent}
+];
+
+export const appRoutingProviders: any[] = [];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

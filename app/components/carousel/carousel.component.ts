@@ -25,7 +25,7 @@ export class CarouselDirective {
   @Input() images: any;
   @Input() speed: number;
 
-  @ViewChild('carouselLList') cLList ;
+  @ViewChild('carouselLList') cLList;
   @ViewChild('carouselRList') cRList;
   @ViewChild('carouselItem') carouselItem;
 
