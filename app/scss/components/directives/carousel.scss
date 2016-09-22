@@ -1,0 +1,40 @@
+$imageHeight: 250px;
+$sidesWidth: calc(100% + 15px);
+$setBorder: true;
+
+.Carousel {
+  width: 75%;
+  margin-top: 20px;
+  position: relative;
+  height: 100%;
+  background: $white_background;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+
+  &:before {
+    content: '';
+    left: 50%;
+    top: 20px;
+    border: 1px solid black;
+    position: absolute;
+    height: $imageHeight - 40px;
+    border: 1px solid #ddd;
+  }
+
+  @include sideWrapper();
+
+  @include e(rightside) {
+    width: $sidesWidth;
+    height: $imageHeight;
+    overflow: auto;
+    @include carouselImage($imageHeight);
+  }
+  @include e(leftside) {
+    width: $sidesWidth;
+    height: $imageHeight;
+    overflow: auto;
+    @include carouselImage($imageHeight);
+  }
+
+
+}

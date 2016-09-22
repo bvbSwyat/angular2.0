@@ -1,0 +1,19 @@
+@import "../config";
+
+
+.no_link {
+  text-decoration: none;
+  cursor: default;
+  color: $default_text_color
+}
+
+.no_list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.center {
+  margin: 0 auto;
+  display: table;
+}

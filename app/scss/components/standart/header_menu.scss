@@ -1,0 +1,27 @@
+.HeaderMenu {
+  height: 45px;
+  border: 2px solid $color-font-inactive;
+  background-color: $color-bg-body;
+  margin: 20px;
+  border-radius: 5px;
+  @include e(item) {
+      cursor: pointer;
+      line-height: 45px;
+      font-size: 25px;
+      padding: 9px;
+
+      &:nth-child(2) {
+        border: 1px solid $color-font-inactive;
+      }
+
+      &:last-child {
+        border-left: 1px solid $color-font-inactive;
+        float: right;
+        line-height: 27px;
+      }
+
+      &:hover {
+        background: $color-border-subtle;
+      }
+  }
+}

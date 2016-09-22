@@ -1,0 +1,14 @@
+@mixin carouselImage($imageHeight) {
+  & img {
+    width: 100%;
+    height: $imageHeight + 5px;
+  }
+}
+@mixin sideWrapper() {
+  &>div {
+    overflow: hidden;
+    width: 50%;
+    display: inline-block;
+  }
+}
+

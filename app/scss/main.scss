@@ -1,0 +1,38 @@
+/* External Libraries */
+
+
+
+/* Mixins */
+@import "mixins/bem";
+@import "mixins/carousel";
+
+
+/* Base */
+@import "base/base";
+@import "base/base-classes";
+
+/* Theme */
+// Base styles should be included by themes.
+
+
+
+/* Components */
+@import "components/standart/header_menu";
+@import "components/standart/content";
+
+
+
+/* Standard resuable compomnents */
+
+
+
+
+/* View components */
+
+
+
+
+/* Directive css components */
+
+@import "components/directives/carousel";
+
